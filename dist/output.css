@@ -420,6 +420,7 @@ video {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-image: url('../assets/gradient.png');
 }
 
 *, ::before, ::after{
@@ -584,7 +585,8 @@ body {
   font-weight: 100;
 }
 
-.navbar__button{
+.showcase__button,
+  .navbar__button{
   border-radius: 0.7rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
@@ -597,4 +599,63 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-/* ending of the navbar */
+/* starting of the showcace */
+
+.showcase{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.showcase__title{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.showcase__discription{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27px;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.showcase__form{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  max-width: 550px;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.25rem;
+}
+
+.showcase__input{
+  width: 20rem;
+  padding-left: 1.25rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.showcase__dashboard{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+/* starting of the quality */

@@ -8,6 +8,7 @@
 @layer base {
   body {
     font-family: 'Roboto', sans-serif;
+    background-image: url('../assets/gradient.png');
   }
 }
 
@@ -21,8 +22,32 @@
     @apply flex items-center gap-7 text-sm font-thin;
   }
 
+  .showcase__button,
   .navbar__button {
     @apply bg-[#1D2130] text-white px-[2.5rem] py-[1rem] rounded-[0.7rem] font-normal;
   }
-  /* ending of the navbar */
+
+  /* starting of the showcace */
+
+  .showcase {
+    @apply max-w-[900px] mx-auto p-4 my-[1.5rem] text-center;
+  }
+
+  .showcase__title {
+    @apply text-[50px] text-[#1D2130] leading-[61px] font-bold my-[2rem];
+  }
+  .showcase__discription {
+    @apply text-[16px] text-[#1D2130] font-light leading-[27px] my-[2rem];
+  }
+  .showcase__form {
+    @apply flex justify-between max-w-[550px] mx-auto bg-white p-1 rounded-xl my-[2.5rem];
+  }
+  .showcase__input {
+    @apply w-80 outline-none pl-5;
+  }
+  .showcase__dashboard {
+    @apply max-w-[900px] mx-auto;
+  }
+
+  /* starting of the quality */
 }
