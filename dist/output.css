@@ -964,8 +964,8 @@ body {
   background-color: #D798E126;
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .property__card{
@@ -990,4 +990,125 @@ body {
 .property__card-description{
   font-size: 1rem;
   font-weight: 300;
+}
+
+/* starting of testimonial */
+
+.testimonial{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  max-width: 1150px;
+  padding: 1rem;
+}
+
+.testimonial__title{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 57px;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.testimonial__wraper{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.75rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.testimonial__card{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-radius: 0.75rem;
+  border-width: 2px;
+  border-color: #6199ED42;
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonial__card-image{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+}
+
+.testimonial__card-name{
+  font-weight: 700;
+}
+
+.testimonial__card-role{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+/* starting of contact  */
+
+.contact {
+  background-image: url('../assets/gradient.png');
+  background-repeat: no-repeat;
+}
+
+.contact__container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  max-width: 1150px;
+  padding: 1rem;
+}
+
+.contact__title{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 57px;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.contact__description{
+  margin-bottom: 1.75rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.contact__button{
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 0.7rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.grow{
+  flex-grow: 1;
 }
