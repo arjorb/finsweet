@@ -1,6 +1,8 @@
-/*
-! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap');
+
+/* Fonts */
+
+/* ! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -416,7 +418,11 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -463,7 +469,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::-webkit-backdrop {
+::-webkit-backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -510,7 +516,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -557,20 +563,38 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+/* starting of the navbar */
+
+.navbar{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 1150px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.navbar__links{
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 100;
 }
 
-.text-gray-700 {
+.navbar__button{
+  border-radius: 0.7rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.underline {
-  text-decoration-line: underline;
-}
+/* ending of the navbar */

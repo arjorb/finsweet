@@ -1,3 +1,28 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+@layer components {
+  /* starting of the navbar */
+  .navbar {
+    @apply max-w-[1150px] mx-auto p-4 flex justify-between items-center;
+  }
+
+  .navbar__links {
+    @apply flex items-center gap-7 text-sm font-thin;
+  }
+
+  .navbar__button {
+    @apply bg-[#1D2130] text-white px-[2.5rem] py-[1rem] rounded-[0.7rem] font-normal;
+  }
+  /* ending of the navbar */
+}
