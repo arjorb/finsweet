@@ -76,7 +76,7 @@
   /* starting of the choose */
 
   .choose {
-    @apply max-w-[1150px] mx-auto p-4 flex items-center justify-between  mt-[3rem];
+    @apply max-w-[1150px] mx-auto p-4 flex  justify-between items-center  mt-[3rem];
   }
 
   .choose__left {
@@ -97,7 +97,11 @@
     @apply max-w-[500px];
   }
   .choose__item {
-    @apply flex gap-5 items-center mb-[2rem];
+    @apply flex gap-6 items-center space-y-6;
+  }
+
+  .choose__image {
+    @apply w-[40px];
   }
 
   /* starting of call to action */
@@ -158,7 +162,10 @@
     @apply max-w-[500px];
   }
   .discover__item {
-    @apply flex gap-5 items-center mb-[2rem];
+    @apply flex gap-7 items-center space-y-6;
+  }
+  .discover__image {
+    @apply w-[50px];
   }
   .discover__item-title {
     @apply text-xl font-bold mb-2;
@@ -167,7 +174,7 @@
   /* starting of property*/
 
   .property {
-    @apply max-w-[1150px] mx-auto p-4 mt-[2rem];
+    @apply max-w-[1150px] mx-auto p-4 mt-[4rem];
   }
 
   .property__heading {
@@ -222,7 +229,7 @@
     background-repeat: no-repeat;
   }
   .contact__container {
-    @apply max-w-[1150px] mx-auto p-4 pb-[10rem];
+    @apply max-w-[1150px] mx-auto p-4 pb-[7rem];
   }
 
   .contact__title {
@@ -241,19 +248,19 @@
     @apply bg-[#1D2130];
   }
   .footer__container {
-    @apply max-w-[1150px] mx-auto p-4 py-[5rem];
+    @apply max-w-[1150px] mx-auto p-4 py-[4rem];
   }
   .footer__wraper {
     @apply flex justify-between;
   }
   .footer__title {
-    @apply text-white text-lg;
+    @apply text-white text-base;
   }
   .footer__links {
     @apply pt-2;
   }
   .footer__link {
-    @apply pt-2 text-[#dedede] text-sm;
+    @apply pt-2 text-[#8b8b8b] text-sm font-light;
   }
   .footer__form {
     @apply bg-[#2B2E3C] mt-4 flex rounded-lg;
@@ -268,15 +275,18 @@
   /* starting copyright  */
 
   .copyright {
-    @apply flex justify-between items-center mt-[4rem];
+    @apply flex justify-between items-center mt-[3rem];
   }
   .copyright__one {
-    @apply border-b-[#888888] border-b-2 w-[350px];
+    @apply border-b-[#888888] border-b-2 w-[380px];
+  }
+  .copyright__icon {
+    @apply w-[15px];
   }
   .copyright__two {
-    @apply border-b-[#888888] border-b-2 w-[350px];
+    @apply border-b-[#888888] border-b-2 w-[380px];
   }
   .copyright__content {
-    @apply text-[#888888] text-sm flex gap-2;
+    @apply text-[#888888] text-[0.7rem] flex gap-5 items-center cursor-pointer;
   }
 }
