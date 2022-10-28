@@ -723,4 +723,39 @@
   .post__card-footer {
     @apply text-[0.8rem] font-normal mt-[1rem];
   }
+
+  /* =========================================== */
+  /* Post */
+  /* ============================================ */
+
+  /* starting of the article */
+
+  .article {
+    @apply max-w-[1250px] mx-auto my-[3rem] p-4 px-[3rem] py-[1rem];
+  }
+  .article__title {
+    @apply text-[45px] text-[#1D2130] text-center leading-[61px] font-bold;
+  }
+  .article__description {
+    @apply text-[16px] text-[#1D2130] text-center font-light leading-[27px] my-[2rem];
+  }
+
+  .article__image {
+    @apply w-[1150px] mx-auto my-[4rem];
+  }
+
+  /* starting of the article body */
+
+  .body {
+    @apply max-w-[800px] mx-auto my-[1rem] p-4 px-[3rem];
+  }
+  .body__title {
+    @apply text-[35px] text-[#1D2130] leading-[61px] mt-[2rem];
+  }
+  .body__description {
+    @apply text-[16px] text-[#1D2130] font-light leading-[27px] my-[2rem];
+  }
+  .body__description--border {
+    @apply pl-[1rem] border-l-4 border-l-[#E0E4FC];
+  }
 }
