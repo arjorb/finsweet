@@ -19,7 +19,7 @@
   .cta__button,
   .showcase__button,
   .navbar__button {
-    @apply bg-dark-200 px-[2.5rem] py-[0.8rem] rounded-[0.7rem] text-white hover:bg-dark-100 cursor-pointer duration-300;
+    @apply bg-dark-200 px-[2.5rem] py-[0.8rem] rounded-[0.7rem] text-white hover:bg-dark-100 cursor-pointer;
   }
 
   /* starting of the showcace */
