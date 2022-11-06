@@ -586,8 +586,15 @@ html {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.showcase__button,
+.message__button,
+  .plan__card-button,
+  .pricing__button,
+  .product__button,
+  .contact__button,
+  .cta__button,
+  .showcase__button,
   .navbar__button {
+  cursor: pointer;
   border-radius: 0.7rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
@@ -597,9 +604,16 @@ html {
   padding-bottom: 0.8rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-duration: 300ms;
 }
 
-.showcase__button:hover,
+.message__button:hover,
+  .plan__card-button:hover,
+  .pricing__button:hover,
+  .product__button:hover,
+  .contact__button:hover,
+  .cta__button:hover,
+  .showcase__button:hover,
   .navbar__button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(49 56 82 / var(--tw-bg-opacity));
@@ -865,19 +879,8 @@ html {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.cta__button {
-  margin-top: 2rem;
-  border-radius: 0.7rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.cta__button--override {
+  margin-top: 1.25rem;
 }
 
 .cta__image {
@@ -1128,29 +1131,11 @@ html {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.contact__button {
+.contact__button--override {
   margin-left: auto;
   margin-right: auto;
   width: 200px;
-  cursor: pointer;
-  border-radius: 0.7rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-duration: 300ms;
-}
-
-.contact__button:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 56 82 / var(--tw-bg-opacity));
 }
 
 /* starting of footer  */
@@ -1309,36 +1294,18 @@ html {
   line-height: 1.25rem;
 }
 
-.product__button {
-  border-radius: 0.7rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  transition-duration: 300ms;
-}
-
-.product__button:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 56 82 / var(--tw-bg-opacity));
-}
-
-.product__button--normal {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .product__button--border {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(183 189 216 / var(--tw-border-opacity));
+  background-color: transparent;
   --tw-text-opacity: 1;
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
 .product__button--border:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1529,30 +1496,12 @@ html {
   background-color: rgb(211 217 248 / var(--tw-bg-opacity));
   padding-left: 0.7rem;
   padding-right: 0.7rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.pricing__button {
-  border-radius: 0.7rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.pricing__button:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 56 82 / var(--tw-bg-opacity));
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .pricing__year {
+  cursor: pointer;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(29 33 48 / var(--tw-text-opacity));
@@ -1582,6 +1531,9 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-top: 1rem;
   padding-bottom: 1rem;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .plan__card--active {
@@ -1668,21 +1620,12 @@ html {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.plan__card-button {
+.plan__card-button--override {
   border-radius: 0.7rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.plan__card-button:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 56 82 / var(--tw-bg-opacity));
 }
 
 /* starting of the faq */
@@ -1829,22 +1772,13 @@ html {
   padding-right: 0.5rem;
 }
 
-.message__button {
+.message__button--override {
   width: 100%;
   border-radius: 0.7rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.message__button:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 56 82 / var(--tw-bg-opacity));
 }
 
 .message__right {

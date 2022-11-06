@@ -18,10 +18,15 @@
   .navbar__links {
     @apply text-dark-200 text-sm font-light flex items-center gap-7;
   }
-
+  .message__button,
+  .plan__card-button,
+  .pricing__button,
+  .product__button,
+  .contact__button,
+  .cta__button,
   .showcase__button,
   .navbar__button {
-    @apply bg-dark-200 px-[2.5rem] py-[0.8rem] rounded-[0.7rem] text-white hover:bg-dark-100;
+    @apply bg-dark-200 px-[2.5rem] py-[0.8rem] rounded-[0.7rem] text-white hover:bg-dark-100 cursor-pointer duration-300;
   }
 
   /* starting of the showcace */
@@ -133,8 +138,9 @@
   .cta__description {
     @apply text-dark-200 text-sm font-light;
   }
-  .cta__button {
-    @apply bg-dark-200 text-sm text-white mt-[2rem] px-[2.5rem] py-[1rem] rounded-[0.7rem];
+
+  .cta__button--override {
+    @apply mt-5;
   }
   .cta__image {
     @apply max-w-[500px];
@@ -248,8 +254,9 @@
   .contact__description {
     @apply text-dark-200 text-sm  text-center  font-light  mb-7;
   }
-  .contact__button {
-    @apply bg-dark-200 text-white text-sm text-center px-[2rem] py-[1rem] rounded-[0.7rem] cursor-pointer w-[200px] mx-auto hover:bg-dark-100 duration-300;
+
+  .contact__button--override {
+    @apply w-[200px] mx-auto text-center;
   }
 
   /* starting of footer  */
@@ -323,14 +330,8 @@
   .product__buttons {
     @apply text-sm flex gap-5;
   }
-  .product__button {
-    @apply px-[2rem] py-[0.8rem] rounded-[0.7rem] hover:bg-dark-100 duration-300;
-  }
-  .product__button--normal {
-    @apply bg-dark-200 text-white;
-  }
   .product__button--border {
-    @apply text-dark-200  border-2 border-[#b7bdd8] hover:text-white;
+    @apply bg-transparent text-dark-200  border-2 border-[#b7bdd8] hover:bg-dark-200 hover:text-white;
   }
 
   /* starting of the company */
@@ -418,13 +419,10 @@
     @apply text-dark-200 text-[1rem] font-light leading-[1.6rem] my-[2rem];
   }
   .pricing__buttons {
-    @apply max-w-[300px] mx-auto px-[0.7rem] py-[1rem] bg-[#d3d9f8] flex items-center gap-10 rounded-2xl;
-  }
-  .pricing__button {
-    @apply bg-dark-200 text-white text-sm  px-[2.5rem] py-[1rem] rounded-[0.7rem] hover:bg-dark-100;
+    @apply max-w-[300px] mx-auto px-[0.7rem] py-[0.7rem] bg-[#d3d9f8] flex items-center gap-10 rounded-2xl;
   }
   .pricing__year {
-    @apply text-[#1D2130] font-bold;
+    @apply text-[#1D2130] font-bold cursor-pointer;
   }
 
   /* starting of plan */
@@ -436,7 +434,7 @@
     @apply max-w-[90vw] mx-auto p-4 flex justify-between items-center gap-7;
   }
   .plan__card {
-    @apply max-w-[400px] bg-white py-[1rem] rounded-2xl;
+    @apply max-w-[400px] bg-white py-[1rem] rounded-2xl shadow-xl;
   }
   .plan__card--active {
     @apply border-4 border-[#6B7CFF] bg-gradient-to-tr from-[#D7ECF5] to-[#DCF3F2];
@@ -472,8 +470,8 @@
     @apply text-[0.8rem] text-[#1D2130] font-light mb-[1rem];
   }
 
-  .plan__card-button {
-    @apply bg-[#1D2130] text-white px-[2.5rem] py-[1rem] rounded-[0.7rem] hover:bg-dark-100;
+  .plan__card-button--override {
+    @apply px-[2.5rem] py-[1rem] rounded-[0.7rem];
   }
 
   /* starting of the faq */
@@ -537,8 +535,9 @@
   .message__input {
     @apply w-full py-[0.8rem] px-[0.5rem] mb-[1.1rem] rounded-md;
   }
-  .message__button {
-    @apply bg-dark-200 w-full text-white px-[2.5rem] py-[1rem] rounded-[0.7rem] hover:bg-dark-100;
+
+  .message__button--override {
+    @apply w-full px-[2.5rem] py-[1rem] rounded-[0.7rem];
   }
   .message__right {
     @apply max-w-[300px];
