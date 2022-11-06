@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  /* change the font of the web pages  */
-  html {
-    @apply font-roboto;
-  }
-}
-
 @layer components {
   /* starting of the navbar */
   .navbar {
@@ -38,7 +31,7 @@
     @apply max-w-[900px] mx-auto p-4  text-center;
   }
   .showcase__title {
-    @apply text-dark-200 text-[3rem] font-bold leading-[3.8rem]  my-[2.5rem];
+    @apply text-dark-200 text-[3rem] font-bold leading-[3.8rem]  my-[4rem];
   }
   .showcase__discription {
     @apply text-dark-200  text-[1rem] font-light leading-[1.6rem] my-[2rem];
@@ -64,7 +57,7 @@
   }
 
   .features__heading {
-    @apply text-dark-200 text-[2.5rem] text-center font-medium leading-[3.2rem] my-[1rem];
+    @apply text-dark-200 text-[2.5rem] text-center font-semibold leading-[3.2rem] my-[1rem];
   }
 
   .features__container {
@@ -512,7 +505,7 @@
     @apply bg-gradient-radial;
   }
   .message__title {
-    @apply text-[3rem] text-center font-bold mt-[7rem];
+    @apply text-[3rem] text-center font-bold mt-[4.5rem];
   }
   .message__container {
     @apply max-w-[90vw] mx-auto p-4 bg-[#F0F2FE] my-[3rem]  px-[3rem] py-[7rem] flex items-center gap-20 rounded-xl;
@@ -760,7 +753,7 @@
     @apply bg-gradient-radial-blog;
   }
   .article__container {
-    @apply max-w-[90vw] mx-auto my-[3rem] p-4 px-[3rem] py-[1rem];
+    @apply max-w-[90vw] mx-auto my-[4rem] p-4 px-[3rem] py-[1rem];
   }
   .article__title {
     @apply text-dark-200 text-[2.7rem] text-center leading-[3.5rem] font-bold;
